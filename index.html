@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<link rel="pingback">
+<title>PARKCRYPTION &#8211; Rent parking spaces using Binance Coin or Ethereum</title>
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<style type="text/css">@font-face {
+ font-family: 'Montserrat';
+ font-style: italic;
+ font-weight: 100;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUOjIg1_i6t8kCHKm459WxZqi7j.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Montserrat';
+ font-style: italic;
+ font-weight: 200;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUPjIg1_i6t8kCHKm459WxZBg_D-w.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Montserrat';
+ font-style: italic;
+ font-weight: 300;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUPjIg1_i6t8kCHKm459WxZYgzD-w.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Montserrat';
+ font-style: italic;
+ font-weight: 400;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUQjIg1_i6t8kCHKm459Wxhzg.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Montserrat';
+ font-style: italic;
+ font-weight: 500;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUPjIg1_i6t8kCHKm459WxZOg3D-w.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Montserrat';
+ font-style: italic;
+ font-weight: 600;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUPjIg1_i6t8kCHKm459WxZFgrD-w.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Montserrat';
+ font-style: italic;
+ font-weight: 700;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUPjIg1_i6t8kCHKm459WxZcgvD-w.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Montserrat';
+ font-style: italic;
+ font-weight: 800;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUPjIg1_i6t8kCHKm459WxZbgjD-w.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Montserrat';
+ font-style: italic;
+ font-weight: 900;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUPjIg1_i6t8kCHKm459WxZSgnD-w.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Montserrat';
+ font-style: normal;
+ font-weight: 100;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUQjIg1_i6t8kCHKm45_Qphzg.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Montserrat';
+ font-style: normal;
+ font-weight: 200;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_aZA7g4.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Montserrat';
+ font-style: normal;
+ font-weight: 300;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_cJD7g4.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Montserrat';
+ font-style: normal;
+ font-weight: 400;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUSjIg1_i6t8kCHKm45xW4.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Montserrat';
+ font-style: normal;
+ font-weight: 500;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_ZpC7g4.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Montserrat';
+ font-style: normal;
+ font-weight: 600;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_bZF7g4.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Montserrat';
+ font-style: normal;
+ font-weight: 700;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_dJE7g4.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Montserrat';
+ font-style: normal;
+ font-weight: 800;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_c5H7g4.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Montserrat';
+ font-style: normal;
+ font-weight: 900;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_epG7g4.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Poppins';
+ font-style: italic;
+ font-weight: 100;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/poppins/v15/pxiAyp8kv8JHgFVrJJLmE3tF.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Poppins';
+ font-style: italic;
+ font-weight: 200;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrJJLmv1plEA.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Poppins';
+ font-style: italic;
+ font-weight: 300;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrJJLm21llEA.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Poppins';
+ font-style: italic;
+ font-weight: 400;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/poppins/v15/pxiGyp8kv8JHgFVrJJLedw.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Poppins';
+ font-style: italic;
+ font-weight: 500;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrJJLmg1hlEA.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Poppins';
+ font-style: italic;
+ font-weight: 600;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrJJLmr19lEA.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Poppins';
+ font-style: italic;
+ font-weight: 700;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrJJLmy15lEA.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Poppins';
+ font-style: italic;
+ font-weight: 800;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrJJLm111lEA.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Poppins';
+ font-style: italic;
+ font-weight: 900;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrJJLm81xlEA.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Poppins';
+ font-style: normal;
+ font-weight: 100;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/poppins/v15/pxiGyp8kv8JHgFVrLPTedw.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Poppins';
+ font-style: normal;
+ font-weight: 200;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLFj_V1s.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Poppins';
+ font-style: normal;
+ font-weight: 300;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8V1s.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Poppins';
+ font-style: normal;
+ font-weight: 400;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Poppins';
+ font-style: normal;
+ font-weight: 500;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9V1s.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Poppins';
+ font-style: normal;
+ font-weight: 600;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6V1s.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Poppins';
+ font-style: normal;
+ font-weight: 700;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLCz7V1s.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Poppins';
+ font-style: normal;
+ font-weight: 800;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDD4V1s.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Poppins';
+ font-style: normal;
+ font-weight: 900;
+ font-display: swap;
+ src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLBT5V1s.ttf) format('truetype');
+}</style>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=5.8.1" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="/wp-content/plugins/goodlayers-core/plugins/fontawesome/font-awesome.min.css?ver=5.8.1" type="text/css" media="all">
+<link rel="stylesheet" id="elegant-font-css" href="/wp-content/plugins/goodlayers-core/plugins/elegant/elegant-font.min.css?ver=5.8.1" type="text/css" media="all">
+<link rel="stylesheet" id="gdlr-core-plugin-css" href="/wp-content/plugins/goodlayers-core/plugins/gdlr-core-plugin.min.css?ver=1628251511" type="text/css" media="all">
+<link rel="stylesheet" id="gdlr-core-page-builder-css" href="/wp-content/plugins/goodlayers-core/include/css/gdlr-core-page-builder.min.css?ver=5.8.1" type="text/css" media="all">
+<link rel="stylesheet" id="rs-plugin-settings-css" href="/wp-content/plugins/revslider/public/assets/css/rs-plugin-settings.min.css?ver=6.2.22" type="text/css" media="all"> <style id="rs-plugin-settings-inline-css" type="text/css">#rs-demo-id {}</style>
+<link rel="stylesheet" id="cryptro-style-core-css" href="/wp-content/themes/cryptro/css/cryptro-style-core.min.css?ver=5.8.1" type="text/css" media="all">
+<link rel="stylesheet" id="cryptro-custom-style-css" href="/wp-content/uploads/cryptro-style-custom.css?1628251511&#038;ver=5.8.1" type="text/css" media="all"> <script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script> <script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script> <script defer type="text/javascript" src="/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.2.22" id="tp-tools-js"></script> <script defer type="text/javascript" src="/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.2.22" id="revmin-js"></script> <!--[if lt IE 9]> <script defer type='text/javascript' src='/wp-content/uploads/siteground-optimizer-assets/cryptro-html5js.min.js?ver=5.8.1' id='cryptro-html5js-js'></script> <![endif]--><link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/pages/6217">
+<meta name="generator" content="WordPress 5.8.1">
+<link rel="canonical" href="/">
+<link rel="shortlink" href="/">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F&#038;format=xml"> <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<meta name="generator" content="Powered by Slider Revolution 6.2.22 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+<link rel="icon" href="/wp-content/uploads/2019/10/cropped-ParkCryption2-2-32x32.png" sizes="32x32">
+<link rel="icon" href="/wp-content/uploads/2019/10/cropped-ParkCryption2-2-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/wp-content/uploads/2019/10/cropped-ParkCryption2-2-180x180.png">
+<meta name="msapplication-TileImage" content="/wp-content/uploads/2019/10/cropped-ParkCryption2-2-270x270.png"> <script type="text/javascript">function setREVStartSize(e){
+ //window.requestAnimationFrame(function() { 
+ window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW; 
+ window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH; 
+ try { 
+ var pw = document.getElementById(e.c).parentNode.offsetWidth,
+ newh;
+ pw = pw===0 || isNaN(pw) ? window.RSIW : pw;
+ e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+ e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+ e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+ e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+ e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+ e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+ e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0); 
+ if(e.layout==="fullscreen" || e.l==="fullscreen") 
+ newh = Math.max(e.mh,window.RSIH); 
+ else{ 
+ e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+ for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1]; 
+ e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+ e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+ for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1]; 
+ var nl = new Array(e.rl.length),
+ ix = 0, 
+ sl; 
+ e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+ e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+ e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+ e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh; 
+ for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+ sl = nl[0]; 
+ for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;} 
+ var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]); 
+ newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+ } 
+ if(window.rs_init_css===undefined) window.rs_init_css = document.head.appendChild(document.createElement("style")); 
+ document.getElementById(e.c).height = newh+"px";
+ window.rs_init_css.innerHTML += "#"+e.c+"_wrapper { height: "+newh+"px }"; 
+ } catch(e){
+ console.log("Failure at Presize of Slider:" + e)
+ } 
+ //});
+ };</script>
+</head>
+<body class="home page-template-default page page-id-6217 gdlr-core-body cryptro-body cryptro-body-front cryptro-full  cryptro-with-sticky-navigation  cryptro-blockquote-style-1 gdlr-core-link-to-lightbox">
+<div class="cryptro-mobile-header-wrap"><div class="cryptro-mobile-header cryptro-header-background cryptro-style-slide cryptro-sticky-mobile-navigation " id="cryptro-mobile-header"><div class="cryptro-mobile-header-container cryptro-container clearfix">
+<div class="cryptro-logo  cryptro-item-pdlr"><div class="cryptro-logo-inner"><a class="" href="/"><img src="/wp-content/uploads/2019/10/ParkCryption2.png" alt="" width="350" height="70" title="ParkCryption2"></a></div></div>
+<div class="cryptro-mobile-menu-right"><div class="cryptro-mobile-menu">
+<a class="cryptro-mm-menu-button cryptro-mobile-menu-button cryptro-mobile-button-hamburger" href="#cryptro-mobile-menu"><span></span></a><div class="cryptro-mm-menu-wrap cryptro-navigation-font" id="cryptro-mobile-menu" data-slide="right"><ul id="menu-main-navigation-onepage" class="m-menu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6197"><a href="#about">About</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7284"><a href="#roadmap">Roadmap</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6199"><a href="#allocation">Token</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6200"><a href="#team">Team</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7240"><a href="/how-to-get-ethereum-park-tokens/">Support Project</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7288"><a href="#contact">Contact</a></li>
+</ul></div>
+</div></div>
+</div></div></div>
+<div class="cryptro-body-outer-wrapper "><div class="cryptro-body-wrapper clearfix  cryptro-with-transparent-header cryptro-with-frame">
+<div class="cryptro-header-background-transparent"><header class="cryptro-header-wrap cryptro-header-style-plain  cryptro-style-menu-right cryptro-sticky-navigation cryptro-style-slide" data-navigation-offset="75px"><div class="cryptro-header-background"></div>
+<div class="cryptro-header-container  cryptro-container"><div class="cryptro-header-container-inner clearfix">
+<div class="cryptro-logo  cryptro-item-pdlr"><div class="cryptro-logo-inner">
+<a class="cryptro-fixed-nav-logo" href="/"><img src="/wp-content/uploads/2019/10/ParkCryption2.png" alt="" width="350" height="70" title="ParkCryption2"></a><a class=" cryptro-orig-logo" href="/"><img src="/wp-content/uploads/2019/10/3241_ParkCryption_sk_03.png" alt="" width="350" height="70" title="3241_ParkCryption_sk_03"></a>
+</div></div>
+<div class="cryptro-navigation cryptro-item-pdlr clearfix "><div class="cryptro-main-menu" id="cryptro-main-menu">
+<ul id="menu-main-navigation-onepage-1" class="sf-menu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6197 cryptro-normal-menu"><a href="#about">About</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7284 cryptro-normal-menu"><a href="#roadmap">Roadmap</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6199 cryptro-normal-menu"><a href="#allocation">Token</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6200 cryptro-normal-menu"><a href="#team">Team</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7240 cryptro-normal-menu"><a href="/how-to-get-ethereum-park-tokens/">Support Project</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7288 cryptro-normal-menu"><a href="#contact">Contact</a></li>
+</ul>
+<div class="cryptro-navigation-slide-bar" id="cryptro-navigation-slide-bar"></div>
+</div></div>
+</div></div></header></div>
+<div class="cryptro-page-wrapper" id="cryptro-page-wrapper"><div class="gdlr-core-page-builder-body">
+<div class="gdlr-core-pbf-wrapper " style="padding: 211px 0px 170px 0px;" id="gdlr-core-wrapper-1">
+<div class="gdlr-core-pbf-background-wrap" style="background-color: #203677 ;"><div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url(/wp-content/uploads/2018/03/bg-blog.jpg) ;background-repeat: repeat-x ;background-position: top center ;" data-parallax-speed="0.15"></div></div>
+<div class="gdlr-core-pbf-wrapper-content gdlr-core-js "><div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+<div class="gdlr-core-pbf-column gdlr-core-column-36 gdlr-core-column-first" id="gdlr-core-column-3112"><div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 20px 0px 0px 0px;">
+<div class="gdlr-core-pbf-background-wrap"></div>
+<div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+<div class="gdlr-core-pbf-element"><div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 25px ;"><div class="gdlr-core-text-box-item-content" style="font-size: 18px ;text-transform: none ;color: #ffffff ;">
+<p>A global vehicle parking solution, using blockchain as the foundation.</p>
+<p>ParkCryption is a Web and Mobile application that allows people to find parking spaces anywhere in the world and pay for parking using cryptocurrency as opposed to needing local currency and without the high fees associated with existing platforms.</p>
+<p>At the heart of the project is a new cryptocurrency token named &#8216;PARK&#8217; that has been developed to run on the Binance Smart Chain and Ethereum blockchain networks.</p>
+</div></div></div>
+<div class="gdlr-core-pbf-element"><div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
+<a class="gdlr-core-button  gdlr-core-button-solid gdlr-core-left-align gdlr-core-button-with-border" href="https://parkcryption.azurewebsites.net/" target="_blank" style="font-size: 14px ;font-weight: 600 ;letter-spacing: 0px ;color: #000000 ;padding: 14px 33px 18px 33px;text-transform: none ;margin: 0px 15px 10px 0px;border-radius: 31px;-moz-border-radius: 31px;-webkit-border-radius: 31px;background: #ffffff ;border-width: 3px 3px 3px 3px;border-color: #eeae20 ;"><span class="gdlr-core-content">Demo App</span></a><a class="gdlr-core-button  gdlr-core-button-solid gdlr-core-left-align gdlr-core-button-with-border" href="/wp-content/uploads/2021/01/ParkCryptionWhitepaperV1.pdf" target="_blank" style="font-size: 14px ;font-weight: 600 ;letter-spacing: 0px ;color: #080808 ;padding: 14px 33px 18px 33px;text-transform: none ;border-radius: 31px;-moz-border-radius: 31px;-webkit-border-radius: 31px;background: #ffffff ;border-width: 3px 3px 3px 3px;border-color: #eeae20 ;"><span class="gdlr-core-content">White Paper</span></a>
+</div></div>
+</div>
+</div></div>
+<div class="gdlr-core-pbf-column gdlr-core-column-24" id="gdlr-core-column-2740"><div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="margin: 0px 50px 0px 50px;padding: 40px 30px 20px 30px;border-radius: 3px 3px 3px 3px;-moz-border-radius: 3px 3px 3px 3px;-webkit-border-radius: 3px 3px 3px 3px;">
+<div class="gdlr-core-pbf-background-wrap" style="background-color: #ffffff ;border-radius: 3px 3px 3px 3px;-moz-border-radius: 3px 3px 3px 3px;-webkit-border-radius: 3px 3px 3px 3px;"></div>
+<div class="gdlr-core-pbf-column-content clearfix gdlr-core-js "><div class="gdlr-core-pbf-element"><div class="gdlr-core-ico-countdown-item gdlr-core-item-pdlr gdlr-core-item-pdb ">
+<div class="gdlr-core-ico-countdown-item-title-wrap">
+<h3 class="gdlr-core-ico-countdown-item-title">Support this Project</h3>
+<div class="gdlr-core-ico-countdown-item-caption">Donate ETH or BNB</div>
+</div>
+<div class="gdlr-core-ico-countdown-button-wrap"><a class="gdlr-core-button gdlr-core-button-solid" href="/how-to-get-ethereum-park-tokens">Acquire PARK tokens</a></div>
+<div class="gdlr-core-ico-countdown-item-bottom-text-wrap">
+<h3 class="gdlr-core-ico-countdown-item-bottom-text">0.01 ETH = 10,000 PARK</h3>
+<div class="gdlr-core-ico-countdown-item-bottom-text-caption">0.10 BNB = 10,000 PARK</div>
+</div>
+<div class="gdlr-core-ico-countdown-item-bottom-banner">
+<span class="gdlr-core-ico-countdown-item-bottom-banner-text">Pay for parking</span><img src="/wp-content/uploads/2021/06/bnbethpark.png" alt="" width="140" height="29" title="bnbethpark">
+</div>
+</div></div></div>
+</div></div>
+<div class="gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first"><div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 65px 0px 0px 0px;">
+<div class="gdlr-core-pbf-background-wrap"></div>
+<div class="gdlr-core-pbf-column-content clearfix gdlr-core-js "></div>
+</div></div>
+</div></div>
+</div>
+<div class="gdlr-core-pbf-wrapper " style="padding: 40px 0px 20px 0px;" id="about">
+<div class="gdlr-core-pbf-background-wrap"></div>
+<div class="gdlr-core-pbf-wrapper-content gdlr-core-js "><div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+<div class="gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first" id="gdlr-core-column-5307"><div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 0px 0px 0px 0px;">
+<div class="gdlr-core-pbf-background-wrap"></div>
+<div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+<div class="gdlr-core-pbf-element"><div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 10px ;"><div class="gdlr-core-title-item-title-wrap"><h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 27px ;font-weight: 500 ;letter-spacing: 0px ;text-transform: none ;color: #1a1a1a ;">WHY USE PARKCRYPTION</h3></div></div></div>
+<div class="gdlr-core-pbf-element"><div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 10px ;"><div class="gdlr-core-text-box-item-content" style="font-size: 17px ;text-transform: none ;color: #5c5c5c ;"><p>The ParkCryption application is a distributed software application (Dapp) that uses blockchain ledger technology.  Here’s how it works:</p></div></div></div>
+<div class="gdlr-core-pbf-element"><div class="gdlr-core-icon-list-item gdlr-core-item-pdlr gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-style-1" style="padding-bottom: 20px ;"><ul>
+<li class=" gdlr-core-skin-divider clearfix"><div class="gdlr-core-icon-list-content-wrap"><span class="gdlr-core-icon-list-content" style="color: #5c5c5c ;font-size: 17px ;font-weight: 400 ;text-transform: none ;letter-spacing: 0px ;">Customers (anybody that wants to use cryptocurrency as a method of paying to park)</span></div></li>
+<li class=" gdlr-core-skin-divider clearfix">
+<span class="gdlr-core-icon-list-icon-wrap gdlr-core-left" style="margin-top: 7px ;"><i class="gdlr-core-icon-list-icon arrow_right" style="color: #228bfe ;font-size: 17px ;width: 17px ;"></i></span><div class="gdlr-core-icon-list-content-wrap"><span class="gdlr-core-icon-list-content" style="color: #5c5c5c ;font-size: 17px ;font-weight: 400 ;text-transform: none ;letter-spacing: 0px ;">Save anywhere between 930% and 1780% on parking costs</span></div>
+</li>
+<li class=" gdlr-core-skin-divider clearfix">
+<span class="gdlr-core-icon-list-icon-wrap gdlr-core-left" style="margin-top: 7px ;"><i class="gdlr-core-icon-list-icon arrow_right" style="color: #228bfe ;font-size: 17px ;width: 17px ;"></i></span><div class="gdlr-core-icon-list-content-wrap"><span class="gdlr-core-icon-list-content" style="color: #5c5c5c ;font-size: 17px ;font-weight: 400 ;text-transform: none ;letter-spacing: 0px ;">Instant access to parking places worldwide and the ability to pay using cryptocurrency</span></div>
+</li>
+<li class=" gdlr-core-skin-divider clearfix">
+<span class="gdlr-core-icon-list-icon-wrap gdlr-core-left" style="margin-top: 7px ;"><i class="gdlr-core-icon-list-icon arrow_right" style="color: #228bfe ;font-size: 17px ;width: 17px ;"></i></span><div class="gdlr-core-icon-list-content-wrap"><span class="gdlr-core-icon-list-content" style="color: #5c5c5c ;font-size: 17px ;font-weight: 400 ;text-transform: none ;letter-spacing: 0px ;">Customers can view parking profiles before making a decision to reserve a booking</span></div>
+</li>
+<li class=" gdlr-core-skin-divider clearfix">
+<span class="gdlr-core-icon-list-icon-wrap gdlr-core-left" style="margin-top: 7px ;"><i class="gdlr-core-icon-list-icon arrow_right" style="color: #228bfe ;font-size: 17px ;width: 17px ;"></i></span><div class="gdlr-core-icon-list-content-wrap"><span class="gdlr-core-icon-list-content" style="color: #5c5c5c ;font-size: 17px ;font-weight: 400 ;text-transform: none ;letter-spacing: 0px ;">Automated parking payments using Blockchain Smart Contracts</span></div>
+</li>
+<li class=" gdlr-core-skin-divider clearfix"><div class="gdlr-core-icon-list-content-wrap"><span class="gdlr-core-icon-list-content" style="color: #5c5c5c ;font-size: 17px ;font-weight: 400 ;text-transform: none ;letter-spacing: 0px ;">Parking Space Providers (anybody that wants to rent out a parking space and receive cryptocurrency as a method of payment)</span></div></li>
+<li class=" gdlr-core-skin-divider clearfix">
+<span class="gdlr-core-icon-list-icon-wrap gdlr-core-left" style="margin-top: 7px ;"><i class="gdlr-core-icon-list-icon arrow_right" style="color: #228bfe ;font-size: 17px ;width: 17px ;"></i></span><div class="gdlr-core-icon-list-content-wrap"><span class="gdlr-core-icon-list-content" style="color: #5c5c5c ;font-size: 17px ;font-weight: 400 ;text-transform: none ;letter-spacing: 0px ;">Keep anywhere between 930% and 1780% of your parking rental income</span></div>
+</li>
+<li class=" gdlr-core-skin-divider clearfix">
+<span class="gdlr-core-icon-list-icon-wrap gdlr-core-left" style="margin-top: 7px ;"><i class="gdlr-core-icon-list-icon arrow_right" style="color: #228bfe ;font-size: 17px ;width: 17px ;"></i></span><div class="gdlr-core-icon-list-content-wrap"><span class="gdlr-core-icon-list-content" style="color: #5c5c5c ;font-size: 17px ;font-weight: 400 ;text-transform: none ;letter-spacing: 0px ;">Instant access to people wanting to rent a parking space worldwide</span></div>
+</li>
+<li class=" gdlr-core-skin-divider clearfix">
+<span class="gdlr-core-icon-list-icon-wrap gdlr-core-left" style="margin-top: 7px ;"><i class="gdlr-core-icon-list-icon arrow_right" style="color: #228bfe ;font-size: 17px ;width: 17px ;"></i></span><div class="gdlr-core-icon-list-content-wrap"><span class="gdlr-core-icon-list-content" style="color: #5c5c5c ;font-size: 17px ;font-weight: 400 ;text-transform: none ;letter-spacing: 0px ;">Instant payment without risk of chargebacks</span></div>
+</li>
+<li class=" gdlr-core-skin-divider clearfix">
+<span class="gdlr-core-icon-list-icon-wrap gdlr-core-left" style="margin-top: 7px ;"><i class="gdlr-core-icon-list-icon arrow_right" style="color: #228bfe ;font-size: 17px ;width: 17px ;"></i></span><div class="gdlr-core-icon-list-content-wrap"><span class="gdlr-core-icon-list-content" style="color: #5c5c5c ;font-size: 17px ;font-weight: 400 ;text-transform: none ;letter-spacing: 0px ;">No unjust negative reviews as all transactions can be proved</span></div>
+</li>
+</ul></div></div>
+</div>
+</div></div>
+<div class="gdlr-core-pbf-column gdlr-core-column-30 gdlr-core-column-first" id="gdlr-core-column-99393"><div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 50px 0px 0px 0px;">
+<div class="gdlr-core-pbf-background-wrap"></div>
+<div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+<div class="gdlr-core-pbf-element"><div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 10px ;"><div class="gdlr-core-title-item-title-wrap"><h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 27px ;font-weight: 500 ;letter-spacing: 0px ;text-transform: none ;color: #1a1a1a ;">SECURITY AND PRIVACY</h3></div></div></div>
+<div class="gdlr-core-pbf-element"><div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 20px ;"><div class="gdlr-core-text-box-item-content" style="font-size: 17px ;text-transform: none ;color: #5c5c5c ;"><p>ParkCryption will use two factor authentication (2FA) to provide an extra layer of security beyond passwords and usernames.  2FA works by creating and sending information to the user or parking provider’s mobile phone to verify their identity at the point of payment and during user registration.</p></div></div></div>
+<div class="gdlr-core-pbf-element"><div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-column-service-icon-left gdlr-core-no-caption gdlr-core-item-pdlr" style="padding-bottom: 15px;">
+<div class="gdlr-core-column-service-media gdlr-core-media-image" style="margin-right: 25px;margin-bottom: 20px;"><img src="/wp-content/uploads/2018/04/icon-service-3.png" alt="" width="62" height="68" title="icon-service-3"></div>
+<div class="gdlr-core-column-service-content-wrapper"><div class="gdlr-core-column-service-title-wrap"><h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 17px ;padding-top: 3px ;font-weight: 400 ;letter-spacing: 0px ;text-transform: none ;">Two Factor Authentication</h3></div></div>
+</div></div>
+<div class="gdlr-core-pbf-element"><div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-column-service-icon-left gdlr-core-no-caption gdlr-core-item-pdlr" style="padding-bottom: 15px;">
+<div class="gdlr-core-column-service-media gdlr-core-media-image" style="margin-top: 0px;margin-right: 20px;margin-bottom: 20px;"><img src="/wp-content/uploads/2018/03/token-icon-2.png" alt="" width="68" height="70" title="token-icon-2"></div>
+<div class="gdlr-core-column-service-content-wrapper"><div class="gdlr-core-column-service-title-wrap"><h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 17px ;padding-top: 3px ;font-weight: 400 ;letter-spacing: 0px ;text-transform: none ;">Encrypted Software Communication</h3></div></div>
+</div></div>
+<div class="gdlr-core-pbf-element"><div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-column-service-icon-left gdlr-core-no-caption gdlr-core-item-pdlr" style="padding-bottom: 15px;">
+<div class="gdlr-core-column-service-media gdlr-core-media-image" style="margin-top: 0px;margin-right: 35px;margin-left: 0px;"><img src="/wp-content/uploads/2018/04/whitepaper-icon.png" alt="" width="54" height="55" title="whitepaper-icon"></div>
+<div class="gdlr-core-column-service-content-wrapper"><div class="gdlr-core-column-service-title-wrap"><h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 17px ;padding-top: 3px ;font-weight: 400 ;letter-spacing: 0px ;text-transform: none ;">Distributed Software Application (Dapp)</h3></div></div>
+</div></div>
+</div>
+</div></div>
+<div class="gdlr-core-pbf-column gdlr-core-column-30"><div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 65px 0px 0px 0px;">
+<div class="gdlr-core-pbf-background-wrap"></div>
+<div class="gdlr-core-pbf-column-content clearfix gdlr-core-js " data-gdlr-animation="fadeInRight" data-gdlr-animation-duration="600ms" data-gdlr-animation-offset="0.8"><div class="gdlr-core-pbf-element"><div class="gdlr-core-image-item gdlr-core-item-pdb  gdlr-core-center-align gdlr-core-item-pdlr"><div class="gdlr-core-image-item-wrap gdlr-core-media-image  gdlr-core-image-item-style-rectangle" style="border-width: 0px;"><img src="/wp-content/uploads/2018/04/service-image-2.png" alt="" width="558" height="449" title="service-image-2"></div></div></div></div>
+</div></div>
+</div></div>
+</div>
+<div class="gdlr-core-pbf-wrapper " style="padding: 80px 0px 20px 0px;" id="features">
+<div class="gdlr-core-pbf-background-wrap"><div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-size: cover ;background-position: bottom center ;" data-parallax-speed="0"></div></div>
+<div class="gdlr-core-pbf-wrapper-content gdlr-core-js "><div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+<div class="gdlr-core-pbf-column gdlr-core-column-30 gdlr-core-column-first" data-skin="Service Color"><div class="gdlr-core-pbf-column-content-margin gdlr-core-js ">
+<div class="gdlr-core-pbf-background-wrap"></div>
+<div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+<div class="gdlr-core-pbf-element"><div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-column-service-icon-left gdlr-core-no-caption gdlr-core-item-pdlr" style="padding-bottom: 30px;">
+<div class="gdlr-core-column-service-media gdlr-core-media-image"><img src="/wp-content/uploads/2018/04/feature-1.png" alt="" width="72" height="72" title="feature-1"></div>
+<div class="gdlr-core-column-service-content-wrapper">
+<div class="gdlr-core-column-service-title-wrap" style="margin-bottom: 13px ;"><h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 17px ;font-weight: 300 ;letter-spacing: 1px ;text-transform: none ;">FREE TO USE</h3></div>
+<div class="gdlr-core-column-service-content" style="text-transform: none ;"><p>ParkCryption is free to use and payment transaction fees are almost zero for parking anywhere in the world unlike competitors who charge high commissions for using their Apps and card transaction fees as well as cross-border currency conversion fees when parking in a country where you do not have a credit card.</p></div>
+</div>
+</div></div>
+<div class="gdlr-core-pbf-element"><div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-column-service-icon-left gdlr-core-no-caption gdlr-core-item-pdlr" style="padding-bottom: 30px;">
+<div class="gdlr-core-column-service-media gdlr-core-media-image"><img src="/wp-content/uploads/2018/04/feature-3.png" alt="" width="72" height="72" title="feature-3"></div>
+<div class="gdlr-core-column-service-content-wrapper">
+<div class="gdlr-core-column-service-title-wrap" style="margin-bottom: 13px ;"><h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 17px ;font-weight: 300 ;letter-spacing: 1px ;">GLOBAL CURRENCY</h3></div>
+<div class="gdlr-core-column-service-content" style="text-transform: none ;"><p>The ParkCryption token is based on cryptocurrency/blockchain technology, allowing users to provide and use parking services without the restrictions of bank fees and fiat currencies.</p></div>
+</div>
+</div></div>
+<div class="gdlr-core-pbf-element"><div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-column-service-icon-left gdlr-core-no-caption gdlr-core-item-pdlr" style="padding-bottom: 30px;">
+<div class="gdlr-core-column-service-media gdlr-core-media-image"><img src="/wp-content/uploads/2018/04/feature-5.png" alt="" width="72" height="72" title="feature-5"></div>
+<div class="gdlr-core-column-service-content-wrapper">
+<div class="gdlr-core-column-service-title-wrap" style="margin-bottom: 13px ;"><h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 17px ;font-weight: 300 ;letter-spacing: 1px ;">HIGH SECURITY</h3></div>
+<div class="gdlr-core-column-service-content" style="text-transform: none ;"><p>Payments are approved using Two Factor Authentication (2FA).  This additional level of security ensures transactions are secure.</p></div>
+</div>
+</div></div>
+</div>
+</div></div>
+<div class="gdlr-core-pbf-column gdlr-core-column-30" data-skin="Service Color"><div class="gdlr-core-pbf-column-content-margin gdlr-core-js ">
+<div class="gdlr-core-pbf-background-wrap"></div>
+<div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+<div class="gdlr-core-pbf-element"><div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-column-service-icon-left gdlr-core-no-caption gdlr-core-item-pdlr" style="padding-bottom: 30px;">
+<div class="gdlr-core-column-service-media gdlr-core-media-image"><img src="/wp-content/uploads/2018/04/feature-4.png" alt="" width="72" height="72" title="feature-4"></div>
+<div class="gdlr-core-column-service-content-wrapper">
+<div class="gdlr-core-column-service-title-wrap" style="margin-bottom: 13px ;"><h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 17px ;font-weight: 300 ;letter-spacing: 1px ;">BLOCKCHAIN SMART CONTRACTS</h3></div>
+<div class="gdlr-core-column-service-content" style="text-transform: none ;"><p>ParkCryption uses Blockchain Smart Contracts to make payment only when the user&#8217;s vehicle has been recorded using satellite coordinates as been parked at a designated parking spot for the reserved amount of time, which protects users and parking providers from fraud.</p></div>
+</div>
+</div></div>
+<div class="gdlr-core-pbf-element"><div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-column-service-icon-left gdlr-core-no-caption gdlr-core-item-pdlr" style="padding-bottom: 30px;">
+<div class="gdlr-core-column-service-media gdlr-core-media-image"><img src="/wp-content/uploads/2018/04/feature-6.png" alt="" width="72" height="72" title="feature-6"></div>
+<div class="gdlr-core-column-service-content-wrapper">
+<div class="gdlr-core-column-service-title-wrap" style="margin-bottom: 13px ;"><h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 17px ;font-weight: 300 ;letter-spacing: 1px ;">Mobile Distributed Application</h3></div>
+<div class="gdlr-core-column-service-content" style="text-transform: none ;"><p>The ParkCryption App uses a decentralized blockchain platform and payment ledger to ensure secure commerce and protection from unathorised third-party interference. </p></div>
+</div>
+</div></div>
+<div class="gdlr-core-pbf-element"><div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-column-service-icon-left gdlr-core-no-caption gdlr-core-item-pdlr" style="padding-bottom: 30px;">
+<div class="gdlr-core-column-service-media gdlr-core-media-image"><img src="/wp-content/uploads/2018/04/feature-2.png" alt="" width="72" height="72" title="feature-2"></div>
+<div class="gdlr-core-column-service-content-wrapper">
+<div class="gdlr-core-column-service-title-wrap" style="margin-bottom: 13px ;"><h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 17px ;font-weight: 300 ;letter-spacing: 1px ;">DATA SCIENCE SYSTEM AND ALGORITHMS</h3></div>
+<div class="gdlr-core-column-service-content" style="text-transform: none ;"><p>Data science algorithms will recommend suitable parking places to customers in real-time as they drive into a town or city.</p></div>
+</div>
+</div></div>
+</div>
+</div></div>
+</div></div>
+</div>
+<div class="gdlr-core-pbf-wrapper " style="padding: 0px 0px 0px 0px;" id="roadmap">
+<div class="gdlr-core-pbf-background-wrap" style="background-color: #ffffff ;background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));-moz-background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));-o-background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));-webkit-background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));"></div>
+<div class="gdlr-core-pbf-wrapper-content gdlr-core-js "><div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-pbf-wrapper-full-no-space">
+<div class="gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first" id="gdlr-core-column-9802"><div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 50px 0px 0px 0px;">
+<div class="gdlr-core-pbf-background-wrap"></div>
+<div class="gdlr-core-pbf-column-content clearfix gdlr-core-js "><div class="gdlr-core-pbf-element"><div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr" style="padding-bottom: 25px ;"><div class="gdlr-core-title-item-title-wrap"><h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 27px ;font-weight: 500 ;letter-spacing: 2px ;color: #000000 ;">RoadMap</h3></div></div></div></div>
+</div></div>
+<div class="gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first" id="gdlr-core-column-58061"><div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 10px 0px 10px 0px;">
+<div class="gdlr-core-pbf-background-wrap" style="opacity: 0.37 ;"></div>
+<div class="gdlr-core-pbf-column-content clearfix gdlr-core-js " style="max-width: 1320px ;"><div class="gdlr-core-pbf-element"><div class="gdlr-core-roadmap-item gdlr-core-js gdlr-core-item-pdb">
+<div class="gdlr-core-roadmap-item-head-wrap">
+<div class="gdlr-core-roadmap-item-head clearfix gdlr-core-active" data-tab-id="1">
+<div class="gdlr-core-roadmap-item-head-count">1</div>
+<div class="gdlr-core-roadmap-item-head-divider"></div>
+<div class="gdlr-core-roadmap-item-head-content">
+<h3 class="gdlr-core-roadmap-item-head-title">Project Idea and Planning Stage</h3>
+<div class="gdlr-core-roadmap-item-head-caption">January 2020</div>
+</div>
+</div>
+<div class="gdlr-core-roadmap-item-head clearfix " data-tab-id="2">
+<div class="gdlr-core-roadmap-item-head-count">2</div>
+<div class="gdlr-core-roadmap-item-head-divider"></div>
+<div class="gdlr-core-roadmap-item-head-content">
+<h3 class="gdlr-core-roadmap-item-head-title">Technical Analysis and High Level Application Design</h3>
+<div class="gdlr-core-roadmap-item-head-caption">March 2020</div>
+</div>
+</div>
+<div class="gdlr-core-roadmap-item-head clearfix " data-tab-id="3">
+<div class="gdlr-core-roadmap-item-head-count">3</div>
+<div class="gdlr-core-roadmap-item-head-divider"></div>
+<div class="gdlr-core-roadmap-item-head-content">
+<h3 class="gdlr-core-roadmap-item-head-title">Begin ParkCryption application development</h3>
+<div class="gdlr-core-roadmap-item-head-caption">July 2020</div>
+</div>
+</div>
+<div class="gdlr-core-roadmap-item-head clearfix " data-tab-id="4">
+<div class="gdlr-core-roadmap-item-head-count">4</div>
+<div class="gdlr-core-roadmap-item-head-divider"></div>
+<div class="gdlr-core-roadmap-item-head-content">
+<h3 class="gdlr-core-roadmap-item-head-title">Minimal Viable Product (MVP) release</h3>
+<div class="gdlr-core-roadmap-item-head-caption">March 2021</div>
+</div>
+</div>
+<div class="gdlr-core-roadmap-item-head clearfix " data-tab-id="5">
+<div class="gdlr-core-roadmap-item-head-count">5</div>
+<div class="gdlr-core-roadmap-item-head-divider"></div>
+<div class="gdlr-core-roadmap-item-head-content">
+<h3 class="gdlr-core-roadmap-item-head-title">Alpha version software release</h3>
+<div class="gdlr-core-roadmap-item-head-caption">October 2021</div>
+</div>
+</div>
+<div class="gdlr-core-roadmap-item-head clearfix " data-tab-id="6">
+<div class="gdlr-core-roadmap-item-head-count">6</div>
+<div class="gdlr-core-roadmap-item-head-divider"></div>
+<div class="gdlr-core-roadmap-item-head-content">
+<h3 class="gdlr-core-roadmap-item-head-title">Beta version software release</h3>
+<div class="gdlr-core-roadmap-item-head-caption">February 2022</div>
+</div>
+</div>
+<div class="gdlr-core-roadmap-item-head clearfix " data-tab-id="7">
+<div class="gdlr-core-roadmap-item-head-count">7</div>
+<div class="gdlr-core-roadmap-item-head-divider"></div>
+<div class="gdlr-core-roadmap-item-head-content">
+<h3 class="gdlr-core-roadmap-item-head-title">Software release version 1.0</h3>
+<div class="gdlr-core-roadmap-item-head-caption">June 2022</div>
+</div>
+</div>
+<div class="gdlr-core-roadmap-item-head clearfix " data-tab-id="8">
+<div class="gdlr-core-roadmap-item-head-count">8</div>
+<div class="gdlr-core-roadmap-item-head-divider"></div>
+<div class="gdlr-core-roadmap-item-head-content">
+<h3 class="gdlr-core-roadmap-item-head-title">List PARK token on cryptocurrency exchanges</h3>
+<div class="gdlr-core-roadmap-item-head-caption">July 2022</div>
+</div>
+</div>
+</div>
+<div class="gdlr-core-roadmap-item-content-wrap">
+<div class="gdlr-core-roadmap-item-content-area gdlr-core-active" data-tab-id="1">
+<div class="gdlr-core-roadmap-item-content-caption">January 2020</div>
+<h3 class="gdlr-core-roadmap-item-content-title">Project Idea and Planning Stage</h3>
+<div class="gdlr-core-roadmap-item-content"><p>Project planning stage and idea documentation.</p></div>
+</div>
+<div class="gdlr-core-roadmap-item-content-area " data-tab-id="2">
+<div class="gdlr-core-roadmap-item-content-caption">March 2020</div>
+<h3 class="gdlr-core-roadmap-item-content-title">Technical Analysis and High Level Application Design</h3>
+<div class="gdlr-core-roadmap-item-content"><p>Carried out technical analysis of the Ethereum blockchain functions (Binance Smart Chain is a fork of Ethereum) and the available software development tools and software languages to use to interact with each blockchain, write smart contracts etc.  Began Ethereum Solidity Smart Contract development and testing along with ParkCryption software application design at a high level including which software development languages and RAD tools to use for the project.</p></div>
+</div>
+<div class="gdlr-core-roadmap-item-content-area " data-tab-id="3">
+<div class="gdlr-core-roadmap-item-content-caption">July 2020</div>
+<h3 class="gdlr-core-roadmap-item-content-title">Begin ParkCryption application development</h3>
+<div class="gdlr-core-roadmap-item-content"><p>Software development work starts on the ParkCryption software system using C# .Net with the Blazor Web Framework along with JavaScript Interop, Azure Cloud Hosting, SQL Server, Entity Framework Core, Ethereum Solidity and Bootstrap 4.0.  C# and JavaScript were used to interact with the MetaMask wallet.  C# and Solidity Smart Contracts where used to interact with the Binance Smart Chain and Ethereum blockchains for PARK token creation and parking space reservation functionality.</p></div>
+</div>
+<div class="gdlr-core-roadmap-item-content-area " data-tab-id="4">
+<div class="gdlr-core-roadmap-item-content-caption">March 2021</div>
+<h3 class="gdlr-core-roadmap-item-content-title">Minimal Viable Product (MVP) release</h3>
+<div class="gdlr-core-roadmap-item-content">
+<p>A minimal viable product (MVP) of the ParkCryption software system will be hosted on Microsoft Azure Cloud Hosting as a testable demo app.<br>https://parkcryption.azurewebsites.net</p>
+<p>(once app is version 1.0 the URL will be https://www.parkcryption.com)</p>
+</div>
+</div>
+<div class="gdlr-core-roadmap-item-content-area " data-tab-id="5">
+<div class="gdlr-core-roadmap-item-content-caption">October 2021</div>
+<h3 class="gdlr-core-roadmap-item-content-title">Alpha version software release</h3>
+<div class="gdlr-core-roadmap-item-content"><p>Alpha version software release of the ParkCryption software system to the ParkCryption community for testing.</p></div>
+</div>
+<div class="gdlr-core-roadmap-item-content-area " data-tab-id="6">
+<div class="gdlr-core-roadmap-item-content-caption">February 2022</div>
+<h3 class="gdlr-core-roadmap-item-content-title">Beta version software release</h3>
+<div class="gdlr-core-roadmap-item-content"><p>Beta version software release of the ParkCryption software system to the ParkCryption community for testing.</p></div>
+</div>
+<div class="gdlr-core-roadmap-item-content-area " data-tab-id="7">
+<div class="gdlr-core-roadmap-item-content-caption">June 2022</div>
+<h3 class="gdlr-core-roadmap-item-content-title">Software release version 1.0</h3>
+<div class="gdlr-core-roadmap-item-content">
+<p>Software release version 1.0 of the ParkCryption software system will be released to the ParkCryption community and wider world.</p>
+<p>URL will be https://www.parkcryption.com</p>
+</div>
+</div>
+<div class="gdlr-core-roadmap-item-content-area " data-tab-id="8">
+<div class="gdlr-core-roadmap-item-content-caption">July 2022</div>
+<h3 class="gdlr-core-roadmap-item-content-title">List PARK token on cryptocurrency exchanges</h3>
+<div class="gdlr-core-roadmap-item-content"><p>List ERC20 and BEP20 PARK tokens on centralized and decentralized cryptocurrency exchanges.</p></div>
+</div>
+</div>
+</div></div></div>
+</div></div>
+</div></div>
+</div>
+<div class="gdlr-core-pbf-wrapper " style="padding: 50px 0px 20px 0px;" id="allocation">
+<div class="gdlr-core-pbf-background-wrap"><div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-repeat: repeat-x ;background-position: top center ;" data-parallax-speed="0"></div></div>
+<div class="gdlr-core-pbf-wrapper-content gdlr-core-js "><div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+<div class="gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first"><div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 0px 0px 0px 0px;">
+<div class="gdlr-core-pbf-background-wrap"><div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="opacity: 0.8 ;background-repeat: no-repeat ;background-position: top center ;" data-parallax-speed="0.08"></div></div>
+<div class="gdlr-core-pbf-column-content clearfix gdlr-core-js "><div class="gdlr-core-pbf-element"><div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr"><div class="gdlr-core-title-item-title-wrap"><h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 27px ;font-weight: 500 ;letter-spacing: 0px ;color: #000000 ;">PAYMENT TOKENS</h3></div></div></div></div>
+</div></div>
+<div class="gdlr-core-pbf-column gdlr-core-column-30 gdlr-core-column-first" id="gdlr-core-column-85160"><div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 20px 0px 30px 0px;">
+<div class="gdlr-core-pbf-background-wrap" style="opacity: 0.66 ;"></div>
+<div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+<div class="gdlr-core-pbf-element"><div class="gdlr-core-icon-list-item gdlr-core-item-pdlr gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-style-1" style="padding-bottom: 35px ;"><ul><li class=" gdlr-core-skin-divider clearfix" style="margin-bottom: 25px ;"><div class="gdlr-core-icon-list-content-wrap">
+<span class="gdlr-core-icon-list-content" style="color: #242424 ;letter-spacing: 2px ;">ParkCryption Token Support</span><span class="gdlr-core-icon-list-caption" style="letter-spacing: 2px ;">Binance Smart Chain, Ethereum and BEP20 and ERC20 PARK tokens</span>
+</div></li></ul></div></div>
+<div class="gdlr-core-pbf-element"><div class="gdlr-core-icon-list-item gdlr-core-item-pdlr gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-style-1" style="padding-bottom: 35px ;"><ul>
+<li class=" gdlr-core-skin-divider gdlr-core-column-30 gdlr-core-column-first clearfix" style="margin-bottom: 25px ;"><div class="gdlr-core-icon-list-content-wrap">
+<span class="gdlr-core-icon-list-content" style="color: #242424 ;letter-spacing: 2px ;">Binance Smart Chain</span><span class="gdlr-core-icon-list-caption" style="letter-spacing: 2px ;">BEP20 PARK TOKENS</span>
+</div></li>
+<li class=" gdlr-core-skin-divider gdlr-core-column-30 clearfix" style="margin-bottom: 25px ;"><div class="gdlr-core-icon-list-content-wrap">
+<span class="gdlr-core-icon-list-content" style="color: #242424 ;letter-spacing: 2px ;">Token Supply</span><span class="gdlr-core-icon-list-caption" style="letter-spacing: 2px ;">1000000000</span>
+</div></li>
+</ul></div></div>
+<div class="gdlr-core-pbf-element"><div class="gdlr-core-icon-list-item gdlr-core-item-pdlr gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-style-1" style="padding-bottom: 35px ;"><ul>
+<li class=" gdlr-core-skin-divider gdlr-core-column-30 gdlr-core-column-first clearfix" style="margin-bottom: 25px ;"><div class="gdlr-core-icon-list-content-wrap">
+<span class="gdlr-core-icon-list-content" style="color: #242424 ;letter-spacing: 2px ;">ETHEREUM</span><span class="gdlr-core-icon-list-caption" style="letter-spacing: 2px ;">ERC20 PARK TOKENS</span>
+</div></li>
+<li class=" gdlr-core-skin-divider gdlr-core-column-30 clearfix" style="margin-bottom: 25px ;"><div class="gdlr-core-icon-list-content-wrap">
+<span class="gdlr-core-icon-list-content" style="color: #242424 ;letter-spacing: 2px ;">Token Supply</span><span class="gdlr-core-icon-list-caption" style="letter-spacing: 2px ;">1000000000</span>
+</div></li>
+</ul></div></div>
+</div>
+</div></div>
+<div class="gdlr-core-pbf-column gdlr-core-column-30"><div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 10px 40px 0px 0px;">
+<div class="gdlr-core-pbf-background-wrap"></div>
+<div class="gdlr-core-pbf-column-content clearfix gdlr-core-js "><div class="gdlr-core-pbf-element"><div class="gdlr-core-chart-item gdlr-core-item-pdlr gdlr-core-item-pdb"><canvas class="gdlr-core-chart-js gdlr-core-js" data-type="doughnut" data-content="{&quot;datasets&quot;:[{&quot;data&quot;:[&quot;50&quot;,&quot;50&quot;],&quot;backgroundColor&quot;:[&quot;#6cc926&quot;,&quot;#236be4&quot;],&quot;borderColor&quot;:[&quot;#ffffff&quot;,&quot;#ffffff&quot;],&quot;hoverBorderColor&quot;:[]}],&quot;labels&quot;:[&quot;  BEP20 PARK TOKENS&quot;,&quot;  ERC20 PARK TOKENS&quot;]}" data-options="{&quot;legend&quot;:{&quot;position&quot;:&quot;right&quot;,&quot;labels&quot;:{&quot;fontColor&quot;:&quot;#137ae9&quot;,&quot;padding&quot;:18}}}"></canvas></div></div></div>
+</div></div>
+</div></div>
+</div>
+<div class="gdlr-core-pbf-wrapper " style="padding: 20px 0px 0px 0px;" id="team">
+<div class="gdlr-core-pbf-background-wrap"><div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="opacity: 0.8 ;background-repeat: no-repeat ;background-position: top center ;" data-parallax-speed="0.05"></div></div>
+<div class="gdlr-core-pbf-wrapper-content gdlr-core-js "><div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+<div class="gdlr-core-pbf-element"><div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr" style="padding-bottom: 60px ;"><div class="gdlr-core-title-item-title-wrap"><h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 27px ;font-weight: 500 ;letter-spacing: 0px ;color: #2b2b2b ;">PROJECT TEAM</h3></div></div></div>
+<div class="gdlr-core-pbf-element"><div class="gdlr-core-personnel-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-personnel-item-style-grid-no-space gdlr-core-personnel-style-grid gdlr-core-item-pdlr" style="padding-bottom: 0px ;"><div class="gdlr-core-personnel-item-holder clearfix">
+<div class="gdlr-core-item-list gdlr-core-personnel-list-column  gdlr-core-column-20 gdlr-core-column-first clearfix"><div class="gdlr-core-personnel-list clearfix">
+<div class="gdlr-core-personnel-list-image gdlr-core-media-image ">
+<img src="/wp-content/uploads/2018/03/kevin.jpg" alt="" width="200" height="200" title="kevin"><div class="gdlr-core-hover-opacity"></div>
+</div>
+<div class="gdlr-core-personnel-list-content-wrap " style="padding-top: 25px ;">
+<h3 class="gdlr-core-personnel-list-title" style="font-size: 14px ;font-weight: 700 ;letter-spacing: 2px ;">Kevin Greenwood</h3>
+<div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 13px ;font-weight: 400 ;font-style: normal ;letter-spacing: 0px ;">Project Founder and Software Developer</div>
+<div class="gdlr-core-personnel-list-content"><p>Created and developed the ParkCryption App idea and software application.</p></div>
+<div class="gdlr-core-personnel-list-social">
+<p></p>
+<div class="gdlr-core-social-network-item gdlr-core-item-pdb  gdlr-core-none-align" style="padding-bottom: 0px ;"><a href="https://www.linkedin.com/in/kevgreenwood/" target="_blank" class="gdlr-core-social-network-icon" title="linkedin"><i class="fa fa-linkedin"></i></a></div>
+<div class="gdlr-core-social-network-item gdlr-core-item-pdb  gdlr-core-none-align" style="padding-bottom: 0px ;"><a href="/cdn-cgi/l/email-protection#523937243b3c122233203931202b22263b3d3c7c313d7c2739" target="_blank" class="gdlr-core-social-network-icon" title="email"><i class="fa fa-envelope"></i></a></div>
+<div class="gdlr-core-social-network-item gdlr-core-item-pdb  gdlr-core-none-align" style="padding-bottom: 0px ;"><a href="https://twitter.com/PCryption" target="_blank" class="gdlr-core-social-network-icon" title="twitter"><i class="fa fa-twitter"></i></a></div>
+</div>
+</div>
+</div></div>
+<div class="gdlr-core-item-list gdlr-core-personnel-list-column  gdlr-core-column-20 clearfix"><div class="gdlr-core-personnel-list clearfix">
+<div class="gdlr-core-personnel-list-image gdlr-core-media-image ">
+<img src="/wp-content/uploads/2016/05/Doug.jpg" alt="" width="200" height="200" title="Doug"><div class="gdlr-core-hover-opacity"></div>
+</div>
+<div class="gdlr-core-personnel-list-content-wrap " style="padding-top: 25px ;">
+<h3 class="gdlr-core-personnel-list-title" style="font-size: 14px ;font-weight: 700 ;letter-spacing: 2px ;">Douglas Fraser</h3>
+<div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 13px ;font-weight: 400 ;font-style: normal ;letter-spacing: 0px ;">Data Scientist (AI / Machine Learning)</div>
+<div class="gdlr-core-personnel-list-content"><p>Data scientist, specializing in AI / machine learning / data science / data engineering.</p></div>
+<div class="gdlr-core-personnel-list-social"><div class="gdlr-core-social-network-item gdlr-core-item-pdb  gdlr-core-none-align" style="padding-bottom: 0px ;"><a href="https://www.linkedin.com/in/douglas-fraser-com/" target="_blank" class="gdlr-core-social-network-icon" title="linkedin"><i class="fa fa-linkedin"></i></a></div></div>
+</div>
+</div></div>
+</div></div></div>
+</div></div>
+</div>
+<div class="gdlr-core-pbf-wrapper " style="padding: 30px 0px 0px 0px;" id="whitepaper">
+<div class="gdlr-core-pbf-background-wrap" style="background-color: #f5f5f5 ;"><div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-repeat: no-repeat ;background-position: center ;" data-parallax-speed="0.1"></div></div>
+<div class="gdlr-core-pbf-wrapper-content gdlr-core-js "><div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+<div class="gdlr-core-pbf-column gdlr-core-column-30 gdlr-core-column-first" data-skin="Purple Title" id="gdlr-core-column-37014"><div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 20px 20px 20px 20px;">
+<div class="gdlr-core-pbf-background-wrap"></div>
+<div class="gdlr-core-pbf-column-content clearfix gdlr-core-js " data-gdlr-animation="fadeInLeft" data-gdlr-animation-duration="600ms" data-gdlr-animation-offset="0.8"><div class="gdlr-core-pbf-element"><div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-column-service-icon-left-title gdlr-core-no-caption gdlr-core-item-pdlr" style="padding-bottom: 30px;"><div class="gdlr-core-column-service-content-wrapper">
+<div class="gdlr-core-column-service-media gdlr-core-media-image" style="margin-top: 0px;margin-right: 15px;"><img src="/wp-content/uploads/2018/03/whitepaper-bg.png" alt="" width="55" height="70" title="whitepaper-bg"></div>
+<div class="gdlr-core-column-service-title-wrap" style="margin-bottom: 25px ;"><h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 27px ;padding-top: 5px ;font-weight: 600 ;letter-spacing: 2px ;">WHITE PAPER</h3></div>
+<div class="gdlr-core-column-service-content" style="font-size: 16px ;text-transform: none ;">
+<p>A global vehicle parking solution, using blockchain as the foundation.</p>
+<p>ParkCryption is a Web and Mobile application that allows people to find parking spaces anywhere in the world and pay for parking using cryptocurrency as opposed to needing local currency and without the high fees associated with existing platforms.</p>
+<p>At the heart of the project is a new cryptocurrency token named &#8216;PARK&#8217; that has been developed to run on the Binance Smart Chain and Ethereum blockchain networks.</p>
+</div>
+</div></div></div></div>
+</div></div>
+<div class="gdlr-core-pbf-column gdlr-core-column-15"><div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 50px 0px 0px 0px;">
+<div class="gdlr-core-pbf-background-wrap"></div>
+<div class="gdlr-core-pbf-column-content clearfix gdlr-core-js " data-gdlr-animation="fadeIn" data-gdlr-animation-duration="600ms" data-gdlr-animation-offset="0.8"><div class="gdlr-core-pbf-element"><div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align"><a class="gdlr-core-button  gdlr-core-button-gradient-v gdlr-core-center-align gdlr-core-button-no-border gdlr-core-button-full-width" href="/wp-content/uploads/2021/01/ParkCryptionWhitepaperV1.pdf" target="_blank" style="font-size: 16px ;font-weight: 600 ;padding: 24px 33px 24px 33px;border-radius: 30px;-moz-border-radius: 30px;-webkit-border-radius: 30px;background: #5494ed ;background: linear-gradient(to right, #5494ed, #2c52e0);-moz-background: linear-gradient(to right, #5494ed, #2c52e0);-o-background: linear-gradient(to right, #5494ed, #2c52e0);-webkit-background: linear-gradient(to right, #5494ed, #2c52e0);"><i class="gdlr-core-pos-left fa fa-file-pdf-o"></i><span class="gdlr-core-content">White Paper</span></a></div></div></div>
+</div></div>
+<div class="gdlr-core-pbf-column gdlr-core-column-15"><div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 50px 0px 0px 0px;">
+<div class="gdlr-core-pbf-background-wrap"></div>
+<div class="gdlr-core-pbf-column-content clearfix gdlr-core-js " data-gdlr-animation="fadeIn" data-gdlr-animation-duration="600ms" data-gdlr-animation-offset="0.8"></div>
+</div></div>
+</div></div>
+</div>
+<div class="gdlr-core-pbf-wrapper " style="padding: 30px 0px 30px 0px;" id="contact">
+<div class="gdlr-core-pbf-background-wrap"><div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="opacity: 0.7 ;background-image: url(/wp-content/uploads/2018/04/roadmap-bg.jpg) ;background-size: cover ;background-position: center ;" data-parallax-speed="0.8"></div></div>
+<div class="gdlr-core-pbf-wrapper-content gdlr-core-js "><div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container"><div class="gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first"><div class="gdlr-core-pbf-column-content-margin gdlr-core-js "><div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+<div class="gdlr-core-pbf-element"><div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 40px ;"><div class="gdlr-core-title-item-title-wrap"><h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 27px ;font-weight: 500 ;letter-spacing: 0px ;text-transform: none ;">CONTACT</h3></div></div></div>
+<div class="gdlr-core-pbf-element"><div class="gdlr-core-social-network-item gdlr-core-item-pdb  gdlr-core-center-align gdlr-core-item-pdlr">
+<a href="/cdn-cgi/l/email-protection#ef848a998681af9f8e9d848c9d969f9b868081c18c80c19a84" target="_blank" class="gdlr-core-social-network-icon" title="email" style="font-size: 25px ;color: #3e6fe6 ;"><i class="fa fa-envelope"></i><span class="gdlr-core-social-network-item-text">Email</span></a><a href="https://twitter.com/PCryption" target="_blank" class="gdlr-core-social-network-icon" title="twitter" style="font-size: 25px ;color: #3e6fe6 ;"><i class="fa fa-twitter"></i><span class="gdlr-core-social-network-item-text">Twitter</span></a>
+</div></div>
+</div></div></div></div></div>
+</div>
+</div></div>
+<footer><div class="cryptro-copyright-wrapper"><div class="cryptro-copyright-container cryptro-container"><div class="cryptro-copyright-text cryptro-item-pdlr">Copyright © 2020, All Rights Reserved. ParkCryption Limited</div></div></div></footer>
+</div></div>
+<a href="#cryptro-top-anchor" class="cryptro-footer-back-to-top-button" id="cryptro-footer-back-to-top-button"><i class="fa fa-angle-up"></i></a> <style>@media only screen and (max-width: 767px){#gdlr-core-wrapper-1.gdlr-core-pbf-wrapper {padding-top: 60px !important;padding-bottom: 70px !important;} }@media only screen and (max-width: 767px){#gdlr-core-column-3112 .gdlr-core-pbf-column-content-margin{padding-top: 20px !important;}}#gdlr-core-column-2740 .gdlr-core-pbf-column-content-margin:hover, #gdlr-core-column-2740 .gdlr-core-pbf-column-content-margin:hover .gdlr-core-pbf-background-wrap, #gdlr-core-column-2740 .gdlr-core-pbf-column-content-margin:hover .gdlr-core-pbf-background-frame{ border-color: #ffffff !important; }#gdlr-core-column-5307 .gdlr-core-pbf-column-content-margin:hover, #gdlr-core-column-5307 .gdlr-core-pbf-column-content-margin:hover .gdlr-core-pbf-background-wrap, #gdlr-core-column-5307 .gdlr-core-pbf-column-content-margin:hover .gdlr-core-pbf-background-frame{ border-color: #ffffff !important; }#gdlr-core-column-99393 .gdlr-core-pbf-column-content-margin:hover, #gdlr-core-column-99393 .gdlr-core-pbf-column-content-margin:hover .gdlr-core-pbf-background-wrap, #gdlr-core-column-99393 .gdlr-core-pbf-column-content-margin:hover .gdlr-core-pbf-background-frame{ border-color: #ffffff !important; }#gdlr-core-column-9802 .gdlr-core-pbf-column-content-margin:hover, #gdlr-core-column-9802 .gdlr-core-pbf-column-content-margin:hover .gdlr-core-pbf-background-wrap, #gdlr-core-column-9802 .gdlr-core-pbf-column-content-margin:hover .gdlr-core-pbf-background-frame{ border-color: #ffffff !important; }#gdlr-core-column-58061 .gdlr-core-pbf-column-content-margin:hover, #gdlr-core-column-58061 .gdlr-core-pbf-column-content-margin:hover .gdlr-core-pbf-background-wrap, #gdlr-core-column-58061 .gdlr-core-pbf-column-content-margin:hover .gdlr-core-pbf-background-frame{ border-color: #ffffff !important; }@media only screen and (max-width: 767px){#gdlr-core-column-85160 .gdlr-core-pbf-column-content-margin{padding-right: 50px !important;padding-left: 35px !important;}}#gdlr-core-column-37014 .gdlr-core-pbf-column-content-margin:hover, #gdlr-core-column-37014 .gdlr-core-pbf-column-content-margin:hover .gdlr-core-pbf-background-wrap, #gdlr-core-column-37014 .gdlr-core-pbf-column-content-margin:hover .gdlr-core-pbf-background-frame{ border-color: #ffffff !important; }</style>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer type="text/javascript" src="/wp-content/uploads/siteground-optimizer-assets/gdlr-core-plugin.min.js?ver=1628251511" id="gdlr-core-plugin-js"></script> <script type="text/javascript" id="gdlr-core-page-builder-js-extra"> /* <![CDATA[ */
+var gdlr_core_pbf = {"admin":"","video":{"width":"640","height":"360"},"ajax_url":"\/wp-admin\/admin-ajax.php","ilightbox_skin":"dark"};
+/* ]]> */ </script> <script defer type="text/javascript" src="/wp-content/uploads/siteground-optimizer-assets/gdlr-core-page-builder.min.js?ver=1.3.9" id="gdlr-core-page-builder-js"></script> <script defer type="text/javascript" src="/wp-content/plugins/sg-cachepress/assets/js/lazysizes.min.js?ver=5.9.7" id="siteground-optimizer-lazy-sizes-js-js"></script> <script defer type="text/javascript" src="/wp-includes/js/jquery/ui/effect.min.js?ver=1.12.1" id="jquery-effects-core-js"></script> <script type="text/javascript" id="cryptro-script-core-js-extra"> /* <![CDATA[ */
+var cryptro_script_core = {"home_url":"\/"};
+/* ]]> */ </script> <script defer type="text/javascript" src="/wp-content/uploads/siteground-optimizer-assets/cryptro-script-core.min.js?ver=1.0.0" id="cryptro-script-core-js"></script> <script type="text/javascript" src="/wp-includes/js/wp-embed.min.js?ver=5.8.1" id="wp-embed-js"></script> <script type="text/javascript"> jQuery(document).ready(function ($) {  for (let i = 0; i < document.forms.length; ++i) {
+ let form = document.forms[i];
+ if ($(form).attr("method") != "get") { $(form).append('<input type="hidden" name="BgvMWSwnetcbIl" value="s3Iewd1" />'); }
+if ($(form).attr("method") != "get") { $(form).append('<input type="hidden" name="KseUxhuqV" value="a[oAJf" />'); }
+if ($(form).attr("method") != "get") { $(form).append('<input type="hidden" name="tbqYmCH" value="3DA_ZjHF7@C5v" />'); }
+ }  $(document).on('submit', 'form', function () {
+ if ($(this).attr("method") != "get") { $(this).append('<input type="hidden" name="BgvMWSwnetcbIl" value="s3Iewd1" />'); }
+if ($(this).attr("method") != "get") { $(this).append('<input type="hidden" name="KseUxhuqV" value="a[oAJf" />'); }
+if ($(this).attr("method") != "get") { $(this).append('<input type="hidden" name="tbqYmCH" value="3DA_ZjHF7@C5v" />'); }
+ return true;
+ });  jQuery.ajaxSetup({
+ beforeSend: function (e, data) {  if (data.type !== 'POST') return;  if (typeof data.data === 'object' && data.data !== null) {
+ data.data.append("BgvMWSwnetcbIl", "s3Iewd1");
+data.data.append("KseUxhuqV", "a[oAJf");
+data.data.append("tbqYmCH", "3DA_ZjHF7@C5v");
+ }
+ else {
+ data.data = data.data + '&BgvMWSwnetcbIl=s3Iewd1&KseUxhuqV=a[oAJf&tbqYmCH=3DA_ZjHF7@C5v';
+ }
+ }
+ });  }); </script>
+</body>
+</html>
